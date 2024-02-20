@@ -14,6 +14,9 @@ export default function Home() {
         isModalOpen={isModalOpen}
         toggleIsModalOpen={toggleIsModalOpen}
         autoOpenTime={2000}
+        textCopied="Coupon"
+        textBody={words}
+        title="title"
       />
     </main>
   );

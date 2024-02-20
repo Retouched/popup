@@ -1,9 +1,7 @@
 "use client";
 import React, { ReactNode, useRef, useEffect } from "react";
-import { Meteors } from "./ui/meteors";
 import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";
-
 import VisuallyHidden from "./VisuallyHidden";
 
 interface ModalProps {
@@ -57,11 +55,11 @@ function Modal({ title, handleDismiss, children }: ModalProps) {
           >
             <button
               ref={closeBtnRef}
-              className="absolute top-0 right-3 p-4 text-white transform -translate-y-full cursor-pointer bg-transparent border-none"
+              className="absolute top-0 right-3 p-0 text-white transform -translate-y-full cursor-pointer bg-transparent border-none"
               onClick={handleDismiss}
             >
               <svg
-                className="absolute "
+                className=""
                 width={24}
                 height={24}
                 viewBox="0 0 24 24"
